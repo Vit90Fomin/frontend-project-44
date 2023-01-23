@@ -9,8 +9,9 @@
 
 ### Установка ###
 make install
-
-Видео по установке
+<br/>   
+Видео по установки пакетов зависимостей.
+<a href="https://asciinema.org/a/lWu0OjsE3zMHiK8k9u7oiBmrR" target="_blank"><img src="https://asciinema.org/a/lWu0OjsE3zMHiK8k9u7oiBmrR.svg" /></a>
 
 1. Игра: "Проверка числа на чётность (brain-even)". Пользователю показано случайное число. Пользователь должен ответить «yes», если число четное, или «no» - если нечётное.
 <br/>  
