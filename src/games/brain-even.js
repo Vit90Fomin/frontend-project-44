@@ -8,7 +8,9 @@ const checkNumberIsEven = (number) => number % 2 === 0;
 const getRound = () => {
   const result = [];
 
-  const question = getRandomNumber(1, 100);
+  const randomNumber = getRandomNumber(1, 100);
+
+  const question = randomNumber;
 
   const answer = checkNumberIsEven(question) ? 'yes' : 'no';
 
