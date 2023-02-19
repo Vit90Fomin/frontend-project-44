@@ -1,19 +1,24 @@
 import startGame from '../index.js';
-import getRandomNumber from '../getRandomNumber.js';
+import getRandomNumber from '../helpers.js';
 
 const condition = 'What is the result of the expression?';
 
 const calculate = (operator, number1, number2) => {
+  let rightAnswer;
   switch (operator) {
     case '+':
-      return number1 + number2;
+      rightAnswer = number1 + number2;
+      break;
     case '-':
-      return number1 - number2;
+      rightAnswer = number1 - number2;
+      break;
     case '*':
-      return number1 * number2;
+      rightAnswer = number1 * number2;
+      break;
     default:
       console.log(`unknown operator: '${operator}'!`);
   }
+  return rightAnswer;
 };
 
 const getRound = () => {
