@@ -3,7 +3,7 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const condition = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const checkNumberIsEven = (number) => number % 2 === 0;
+const isEven = (number) => number % 2 === 0;
 
 const getRound = () => {
   const result = [];
@@ -12,10 +12,10 @@ const getRound = () => {
 
   const question = randomNumber;
 
-  const answer = checkNumberIsEven(question) ? 'yes' : 'no';
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
 
   result.push(question);
-  result.push(answer);
+  result.push(correctAnswer);
 
   return result;
 };

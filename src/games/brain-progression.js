@@ -3,15 +3,15 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const condition = 'What number is missing in the progression?';
 
-const randomProgression = (firstNumber, progressionStep, progressionLength) => {
-  const progressionArray = [];
+const getProgression = (firstNumber, progressionStep, progressionLength) => {
+  const progression = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
     const nextNumber = firstNumber + progressionStep;
-    progressionArray.push(nextNumber);
+    progression.push(nextNumber);
   }
 
-  return progressionArray;
+  return progression;
 };
 
 const getRound = () => {
@@ -22,14 +22,14 @@ const getRound = () => {
   const randomIndex = getRandomNumber(0, progressionLength - 1);
   const changeRandomIndex = '..';
 
-  const question = randomProgression(firstNumber, progressionStep, progressionLength);
+  const question = getProgression(firstNumber, progressionStep, progressionLength);
 
-  const answer = question[randomIndex].toString();
+  const correctAnswer = question[randomIndex].toString();
 
   question[randomIndex] = changeRandomIndex;
 
   result.push(question.join(' '));
-  result.push(answer);
+  result.push(correctAnswer);
 
   return result;
 };
