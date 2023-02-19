@@ -3,12 +3,16 @@
 [![Actions Status](https://github.com/Vit90Fomin/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Vit90Fomin/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/Vit90Fomin/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/36f44135b6035a2f134a/maintainability" /></a>
 
+## Проект - "Игры разума" ##
 
-# О проекте #
+## О проекте ##
 Проект - "Игры разума", включает в себя серию из 5 математических игр. Каждая игра состоит из трех раундов, для победы в игре пользователь должен дать три верных ответа подряд. В случае, если пользователь даст неверный ответ игра будет завершена.
 
 ### Установка ###
 make install
+
+**Cистемные требования:** node v18.12.1.
+
 <br/>   
 Видео по установки пакетов зависимостей.
 <a href="https://asciinema.org/a/lWu0OjsE3zMHiK8k9u7oiBmrR" target="_blank"><img src="https://asciinema.org/a/lWu0OjsE3zMHiK8k9u7oiBmrR.svg" /></a>
